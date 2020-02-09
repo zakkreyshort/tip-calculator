@@ -14,14 +14,23 @@ describe('Tip Calculator', () => {
   test("if user inputs a negative float return error", () => {
     expect(calc3.checkNegative()).toEqual("Error");
   })
+})
 
-  const calc4 = new Calculator(20);
+describe('Tip Calculation', () => {
+  let balance;
+  beforeEach(() => {
+    balance = new Calculator(20);
+  });
+
   test('if user enters 10% tip, return 10% of total', () => {
-    expect(calc4.calculateTen()).toEqual(2.00);
-  })
+    expect(balance.calculateTen()).toEqual(2.00);
+  });
 
-  const calc5 = new Calculator(20);
   test('if user enters 15% tip, return 15% of total', () => {
-    expect(calc5.calculateFifteen()).toEqual(3.00);
+    expect(balance.calculateFifteen()).toEqual(3.00);
+  });
+
+  test('if user enters 20% tip, return 20% of total', () => {
+    expect(balance.calculateTwenty()).toEqual(4.00)
   });
 })

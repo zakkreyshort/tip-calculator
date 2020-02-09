@@ -25,7 +25,12 @@ export class Calculator {
   }
 
   calculateFifteen() {
-    this.totalCost = parseFloat((this.totalCost * 0.15).toFixed(3))
+    this.totalCost = parseFloat((this.totalCost * 0.15).toFixed(2))
+    return this.totalCost;
+  }
+
+  calculateTwenty() {
+    this.totalCost = parseFloat((this.totalCost * 0.20).toFixed(2))
     return this.totalCost;
   }
   };
