@@ -1,5 +1,6 @@
 export class Calculator {
-  constructor() {
-    
+  constructor(totalCost) {
+    this.totalCost = parseFloat((totalCost).toFixed(2));
+
   }
 }
