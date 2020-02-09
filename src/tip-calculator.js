@@ -1,6 +1,18 @@
 export class Calculator {
   constructor(totalCost) {
-    this.totalCost = parseFloat((totalCost).toFixed(2));
+    this.totalCost = totalCost;
 
   }
-}
+
+  convertFloat(){
+    if(isNaN(this.totalCost)){
+      return "Error";
+    } else{
+        this.totalCost = parseFloat((this.totalCost).toFixed(2));
+      }
+    }
+  };
+
+
+
+  
