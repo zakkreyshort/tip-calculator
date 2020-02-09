@@ -20,4 +20,8 @@ describe('Tip Calculator', () => {
     expect(calc4.calculateTen()).toEqual(2.00);
   })
 
+  const calc5 = new Calculator(20);
+  test('if user enters 15% tip, return 15% of total', () => {
+    expect(calc5.calculateFifteen()).toEqual(3.00);
+  });
 })
