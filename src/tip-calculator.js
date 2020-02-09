@@ -18,6 +18,11 @@ export class Calculator {
       return "Error";
     }
   }
+
+  calculateTen() {
+    this.totalCost = parseFloat((this.totalCost * 0.10).toFixed(2))
+    return this.totalCost;
+  }
   };
 
 
