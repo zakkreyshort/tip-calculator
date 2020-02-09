@@ -10,5 +10,9 @@ describe('Tip Calculator', () => {
     expect(calc2.convertFloat()).toEqual("Error");
   });
 
+  const  calc3 = new Calculator(-25);
+  test("if user inputs a negative float return error", () => {
+    expect(calc3.checkNegative()).toEqual("Error");
+  })
 
 })
